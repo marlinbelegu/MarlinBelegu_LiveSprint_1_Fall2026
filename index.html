@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Reveal What's that Animal UI</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+  <header>
+    <h1>Welcome to the Interactive Reveal What’s that Animal UI</h1>
+  </header>
 
-    <script src="app.js"></script>
+  <main>
+    <section class="instructions">
+      <p>Click on the buttons below to reveal the animal images</p>
+    </section>
+
+    <section class="animals">
+      <!-- Cat column -->
+      <article class="animal" id="cat-column">
+        <figure id="cat-display" class="display hidden">
+          <img src="images/cat.jpg" alt="A tabby cat sitting outdoors">
+          <button type="button" class="hide-btn" data-target="cat">Hide Result</button>
+        </figure>
+        <button type="button" class="reveal-btn" data-target="cat">Reveal a CAT</button>
+      </article>
+
+      <!-- Dog column -->
+      <article class="animal" id="dog-column">
+        <figure id="dog-display" class="display hidden">
+          <img src="images/dog.jpg" alt="A golden retriever puppy on a beach">
+          <button type="button" class="hide-btn" data-target="dog">Hide Result</button>
+        </figure>
+        <button type="button" class="reveal-btn" data-target="dog">Reveal a DOG</button>
+      </article>
+
+
+      <!-- Cow column -->
+      <article class="animal" id="cow-column">
+        <figure id="cow-display" class="display hidden">
+          <img src="images/cow.jpg" alt="A highland cow eating grass in a field">
+          <button type="button" class="hide-btn" data-target="cow">Hide Result</button>
+        </figure>
+        <button type="button" class="reveal-btn" data-target="cow">Reveal a COW</button>
+      </article>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
 </body>
 </html>

@@ -3,3 +3,114 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: Roboto , sans-serif;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  background-color: #4b6883;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  margin: 0 0 1rem;
+  background-color: #f08502;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.instructions p {
+  margin: 0 0 1.5rem;
+  font-size: 1.1rem;
+  background-color: #f08502;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+
+.animals {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: end; 
+}
+
+.animal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.display {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.display img {
+  width: 100%;
+  max-width: 220px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: #f08502;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #9c6113;
+  color: #fff;
+}
+
+.hide-btn {
+  width: 100%;
+  max-width: 220px;
+  background-color: #5b9bd5;
+  color: #fff;
+  border: 1px solid #41719c;
+  border-radius: 4px;
+}
+
+.hide-btn:hover {
+  background-color: #41719c;
+}
+
+#cat-display {
+  background-color: #f08502;
+  border-radius: 4px;
+}
+
+#dog-display {
+  background-color: #f08502;
+  border-radius: 4px;
+}
+
+#cow-display {
+  background-color: #f08502;
+    border-radius: 4px;
+}
+
+
+@media (max-width: 600px) {
+  .animals {
+    grid-template-columns: 1fr;
+  }
+}
